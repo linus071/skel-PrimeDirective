@@ -27,7 +27,22 @@ public class PrimeFactorSequence {
      */
     public List<Integer> primeFactorSequence() {
         List<Integer> seq = new ArrayList<>();
-        // TODO: Implement this method
+        
+        int count = 0;
+        
+        for(int i = 0 ; i <= upperBound; i++){
+          
+            for(int j = 0; j < Primes.getPrimes(i).size();j++){
+            
+          if( Primes.getPrimes(i).get(j) != 0){
+            
+              count++
+          }
+         
+        }
+            seq.add(count);
+       }
+        
         return seq;
     }
 
